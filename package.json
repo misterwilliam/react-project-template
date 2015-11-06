@@ -1,0 +1,9 @@
+{
+  "name": "React Project Template",
+  "version": "0.0.1",
+  "description": "React project template with webpack and flow.",
+  "dependencies": {
+    "react": "^0.14.2",
+    "webpack": "^1.12.3"
+  }
+}
