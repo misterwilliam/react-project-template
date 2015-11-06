@@ -4,7 +4,8 @@
   "description": "React project template with webpack and flow.",
   "scripts": {
     "prestart": "webpack",
-    "start": "node webserver.js"
+    "start": "node webserver.js",
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "babel-core": "^6.1.2",
