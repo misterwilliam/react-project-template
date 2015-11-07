@@ -3,9 +3,14 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var DataStore = require('./dataStore');
-
-var data = new DataStore();
+// Demonstrate usage of es2015 feature with a flow feature.
+class ExampleClass {
+  data: string;
+  constructor() {
+    this.data = "data";
+  }
+}
+var exampleClass = new ExampleClass();
 
 var Foo = React.createClass({
   render: function() {
@@ -18,6 +23,6 @@ var Foo = React.createClass({
 });
 
 ReactDOM.render(
-  <Foo message={"hi"} />,
+  <Foo message={exampleClass.data} />,
   document.getElementById('react-container')
 );
