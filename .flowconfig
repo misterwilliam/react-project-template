@@ -1,5 +1,7 @@
 [ignore]
-.*/node_modules/.*
+.*/node_modules/babel-.*
+.*/node_modules/babylon/.*
+.*/flow/include/.*
 
 [include]
 

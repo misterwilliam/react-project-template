@@ -1,23 +1,23 @@
-/* flow */
+/* @flow */
 
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-class DataStore {
-  constructor() {
-    this.message = "message";
-  }
-};
+var DataStore = require('./dataStore');
+
+var data = new DataStore();
 
 var Foo = React.createClass({
-  render: function(): ?ReactElement {
+  render: function() {
     return (
-      <div>Foo</div>
+      <div>
+        {this.props.message}
+      </div>
     )
   }
 });
 
 ReactDOM.render(
-  <Foo/>,
+  <Foo message={"hi"} />,
   document.getElementById('react-container')
 );
